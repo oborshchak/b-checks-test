@@ -23,6 +23,6 @@ describe("triple", () => {
   it("case 9", () => {
     const res = triple(9);
 
-    expect(res).toBe(26);
+    expect(res).toBe(27);
   });
 });
