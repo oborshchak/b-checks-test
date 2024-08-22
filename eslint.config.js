@@ -6,7 +6,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 
 export default [
-  { ignores: ["dist", "coverage"] },
+  { ignores: ["dist", "coverage", "**/*.test.{js,jsx}"] },
   {
     files: ["**/*.{js,jsx}"],
     languageOptions: {
@@ -20,7 +20,7 @@ export default [
     },
     settings: { react: { version: "18.3" } },
     plugins: {
-      jest,
+      jest: jest,
       react,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
@@ -35,6 +35,7 @@ export default [
         "warn",
         { allowConstantExport: true },
       ],
+      "no-console": "error",
     },
   },
 ];
