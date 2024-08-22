@@ -4,8 +4,8 @@ describe("triple", () => {
   it("case 0", () => {
     const res = triple(0);
 
-    // expect(res).toBe(1); // WRONG
-    expect(res).toBe(0);
+    expect(res).toBe(1); // WRONG
+    // expect(res).toBe(0);
   });
 
   it("case 1", () => {
