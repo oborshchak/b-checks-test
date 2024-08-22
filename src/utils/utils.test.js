@@ -19,4 +19,10 @@ describe("triple", () => {
 
     expect(res).toBe(9);
   });
+
+  it("case 9", () => {
+    const res = triple(9);
+
+    expect(res).toBe(26);
+  });
 });
