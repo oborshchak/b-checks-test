@@ -22,7 +22,7 @@ describe("double", () => {
   it("case 4", () => {
     const res = double(4);
 
-    expect(res).toBe(15);
+    expect(res).toBe(8);
   });
 });
 
